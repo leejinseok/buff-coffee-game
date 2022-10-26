@@ -1,0 +1,48 @@
+button {
+  height: 40px;
+  background-color: #5383e8;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.search-wrap {
+  width: fit-content;
+  margin: auto;
+}
+
+.button-wrap {
+  width: fit-content;
+  margin: 10px auto 0px;
+}
+
+#repo-input {
+  width: 500px;
+  height: 40px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#profile-images {
+  width: fit-content;
+  margin: 40px auto 0;
+  display: flex;
+  gap: 5px;
+  background: none;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
