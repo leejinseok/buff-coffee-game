@@ -14,7 +14,48 @@
 ### 브랜치명
 - feature/{name}/사다리게임 -> main 브랜치로 pr
 
-### 컨트리뷰터!!
-Thank you to all our [contributors](https://github.com/leejinseok/buff-coffee-game/graphs/contributors)!
-
-[![Buff Coffee Game Contributors][contributors-src]][contributors-href]
+### 제공자
+<table>
+  <tr>
+    <td>
+      <div>
+        <img src="https://avatars.githubusercontent.com/u/7136340?s=60&v=4" />
+      </div>
+      <p>
+        leejinseok
+      </p>
+    </td>
+   <td>
+      <div>
+        <img src="https://avatars.githubusercontent.com/u/31311554?s=64&v=4" />
+      </div>
+      <p>
+        Daeboo
+      </p>
+    </td>
+    <td>
+      <div>
+        <img src="https://avatars.githubusercontent.com/u/66585319?s=60&v=4" />
+      </div>
+      <p>
+        ws.han
+      </p>
+    </td>
+    <td>
+      <div>
+        <img src="https://avatars.githubusercontent.com/u/90893364?s=64&v=4" />
+      </div>
+      <p>
+        Hye Lin
+      </p>
+    </td>
+    <td>
+      <div>
+        <img src="https://avatars.githubusercontent.com/u/75660658?s=64&v=4" />
+      </div>
+      <p>
+        Kim YoungJae
+      </p>
+    </td>
+  <tr>
+</table>
