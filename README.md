@@ -16,4 +16,5 @@
 
 ### 컨트리뷰터!!
 Thank you to all our [contributors](https://github.com/leejinseok/buff-coffee-game/graphs/contributors)!
+
 [![Buff Coffee Game Contributors][contributors-src]][contributors-href]
