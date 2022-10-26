@@ -61,6 +61,11 @@
   <tr>
 </table>
 
+### 컨트리뷰터 테스트
+<a href="https://github.com/leejinseok/buff-coffee-game/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=leejinseok/buff-coffee-game" />
+</a>
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
