@@ -14,8 +14,6 @@
 ### 브랜치명
 - feature/{name}/사다리게임 -> main 브랜치로 pr
 
-### 컨트리 뷰트 테스트
-[contributors-url]: https://github.com/leejinseok/buff-coffee-game/graphs/contributors
 
 ### 제공자
 <table>
@@ -62,3 +60,8 @@
     </td>
   <tr>
 </table>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-url]: https://github.com/leejinseok/buff-coffee-game/graphs/contributors
