@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Contributors</title>
+  </head>
+  <link rel="stylesheet" href="./styles.css" />
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+    integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <style></style>
+  <body>
+    <div class="wrap">
+      <div class="search-wrap">
+        <div>
+          <input id="repo-input" placeholder="repository url" />
+          <button id="coffee-game">커피게임 레포</button>
+        </div>
+        <div class="button-wrap">
+          <button id="get">이미지 가져오기</button>
+          <button id="save">이미지 저장</button>
+        </div>
+      </div>
+
+      <div id="profile-images"></div>
+    </div>
+
+    <script>
+      $("#coffee-game").click(function (e) {
+        $("#repo-input").attr("value", "leejinseok/buff-coffee-game")
+      })
+      $("#get").click(function (e) {
+        const inputVal = $("#repo-input").val()
+
+        $.ajax({
+          method: "GET",
+          url: `https://api.github.com/repos/${inputVal}/contributors`,
+        }).done((res) => {
+          res.forEach((el) => {
+            $("#profile-images").append(
+              `<img class="profile" src="${el.avatar_url}" />`
+            )
+          })
+        })
+      })
+
+      $("#save").click(function (e) {
+        console.log(document.querySelector("#profile-images"))
+        html2canvas(document.querySelector("#profile-images"), {
+          useCORS: true,
+        }).then(function (canvas) {
+          const imageUrl = canvas.toDataURL("image/png")
+
+          let link = document.createElement("a")
+
+          link.href = imageUrl
+          link.download = "profile.png"
+          document.body.appendChild(link)
+          link.click()
+          document.body.removeChild(link)
+        })
+      })
+    </script>
+  </body>
+</html>
