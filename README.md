@@ -14,4 +14,4 @@
 ### 브랜치명
 - feature/{name}/사다리게임 -> main 브랜치로 pr
 
-contributors-img
+[![Nuxt Contributors][contributors-src]][contributors-href]
