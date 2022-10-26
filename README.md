@@ -14,5 +14,5 @@
 ### 브랜치명
 - feature/{name}/사다리게임 -> main 브랜치로 pr
 
-## 컨트리뷰터!!
-
+### 컨트리뷰터!!
+Thank you to all our [contributors](https://github.com/leejinseok/buff-coffee-game/graphs/contributors)!
