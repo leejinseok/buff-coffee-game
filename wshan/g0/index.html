@@ -6,7 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
   <body>
-    testtest
+    <div class="wrap">
+      <div class="frog-wrap">
+        <img
+          src="https://flexboxfroggy.com/images/frog-green.svg"
+          class="frog"
+        />
+      </div>
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+      <img src="https://flexboxfroggy.com/images/lilypad-green.svg" />
+    </div>
+    <div>
+      <button id="start">눌러잇</button>
+    </div>
   </body>
+  <script>
+    $("#start").click(function (e) {
+      const random = (Math.random() * 6 + 1).toFixed()
+
+      console.log($(".frog"))
+
+      $(".frog-wrap").attr("style", `left:${random * 162}px`)
+    })
+
+    console.log(random)
+  </script>
+  <style>
+    .wrap {
+      position: relative;
+    }
+
+    .frog-wrap {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes frogAnimate {
+      0% {
+        transform: scale3d(1, 1, 1);
+      }
+
+      50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+
+      100% {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+    .frog {
+      width: 100px;
+      height: 100px;
+      animation-name: frogAnimate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+  </style>
 </html>
