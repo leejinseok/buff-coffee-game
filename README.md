@@ -74,7 +74,10 @@
 
 ### 테스트2
 
- <img height="65px" src="https://s3.ap-northeast-2.amazonaws.com/dev.k-pop.site/profile.png" />
+<a href="https://github.com/leejinseok/buff-coffee-game/graphs/contributors">
+  <img class="profile" style="width: 65px; height: 65px; border-radius: 50%;" src="https://avatars.githubusercontent.com/u/7136340?v=4" />
+  <img class="profile" style="width: 65px; height: 65px; border-radius: 50%;" src="https://avatars.githubusercontent.com/u/66585319?v=4" />
+</a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
